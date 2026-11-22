@@ -1,0 +1,1534 @@
+<!doctype html>
+<html lang="fr" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LBN Toiture — Couvreur &amp; Zinguerie à Nancy (54000)</title>
+    <meta
+      name="description"
+      content="LBN Toiture à Nancy (2 Rue Virginie Mauvais, 54000) : couverture tuile mécanique et béton, gouttière zinc, bardage ardoise et bac acier, hydrofuge, isolation et dépannage toiture. Note Google 5/5 (518 avis vérifiés)."
+    />
+    <meta property="og:title" content="LBN Toiture — Couvreur à Nancy (54000)" />
+    <meta
+      property="og:description"
+      content="Entreprise de couverture et zinguerie à Nancy. Ouvert du lundi au samedi de 8h à 18h. Note Google 5/5 (518 avis vérifiés)."
+    />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <!-- Google Fonts : Outfit (Display) + DM Sans (Body) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Outfit:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Tailwind CSS CDN (Autonome pour GitHub Pages) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              display: ['"Outfit"', 'system-ui', 'sans-serif'],
+              sans: ['"DM Sans"', 'system-ui', 'sans-serif'],
+            },
+            colors: {
+              mineral: {
+                base: '#12161F',
+                elevated: '#1A2130',
+                card: '#1E2638',
+                soft: '#263044',
+              },
+              stoneLight: {
+                warm: '#EFECE6',
+                slate: '#E6EAEF',
+                card: '#F7F5F0',
+              },
+              steel: {
+                light: '#38BDF8',
+                bright: '#7DD3FC',
+                dark: '#075985',
+                darkHover: '#0C4A6E',
+              },
+            },
+          },
+        },
+      };
+    </script>
+
+    <style>
+      :root {
+        --mouse-x: 50%;
+        --mouse-y: 35%;
+      }
+
+      body {
+        font-family: 'DM Sans', system-ui, sans-serif;
+        background-color: #12161f;
+        color: #f1f5f9;
+        -webkit-font-smoothing: antialiased;
+      }
+
+      h1,
+      h2,
+      h3,
+      .font-display {
+        font-family: 'Outfit', system-ui, sans-serif;
+      }
+
+      /* Halo Spotlight doux sur le Hero */
+      .hero-spotlight {
+        position: relative;
+        overflow: hidden;
+      }
+
+      .hero-spotlight::before {
+        content: '';
+        position: absolute;
+        inset: 0;
+        pointer-events: none;
+        background: radial-gradient(
+          680px circle at var(--mouse-x) var(--mouse-y),
+          rgba(56, 189, 248, 0.11),
+          transparent 62%
+        );
+        transition: opacity 0.2s ease;
+      }
+
+      /* Trame géométrique zinc à joint debout */
+      .zinc-seam-bg {
+        background-image: linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+          linear-gradient(to bottom, rgba(255, 255, 255, 0.025) 1px, transparent 1px);
+        background-size: 56px 56px;
+      }
+
+      /* Chorégraphie douce au scroll */
+      .reveal-block {
+        opacity: 0;
+        transform: translateY(16px);
+        transition: opacity 0.55s cubic-bezier(0.16, 1, 0.3, 1),
+          transform 0.55s cubic-bezier(0.16, 1, 0.3, 1);
+      }
+
+      .reveal-block.is-visible {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        .reveal-block {
+          opacity: 1;
+          transform: none;
+          transition: none;
+        }
+        .hero-spotlight::before {
+          display: none;
+        }
+      }
+
+      #scroll-progress {
+        transform-origin: left center;
+        transform: scaleX(0);
+      }
+
+      :focus-visible {
+        outline: 2px solid #38bdf8;
+        outline-offset: 2px;
+      }
+    </style>
+  </head>
+
+  <body class="bg-mineral-base text-slate-100 selection:bg-steel-light selection:text-mineral-base pb-24 md:pb-0">
+    <!-- Barre de progression de lecture (2px) -->
+    <div
+      id="scroll-progress"
+      aria-hidden="true"
+      class="fixed top-0 left-0 right-0 h-[2px] bg-steel-light z-[60] pointer-events-none"
+    ></div>
+
+    <!-- 1. Bandeau Démo « Avant / Après » (Sticky tout en haut) -->
+    <div
+      class="sticky top-0 z-50 bg-[#0D1118] text-slate-100 border-b border-white/10 px-4 h-10 flex items-center justify-between gap-3 text-xs sm:text-sm"
+    >
+      <div class="flex items-center gap-2.5 min-w-0">
+        <span
+          class="inline-flex items-center px-2 py-0.5 rounded bg-steel-light text-mineral-base font-bold tracking-wide text-[11px] whitespace-nowrap shrink-0"
+        >
+          MAQUETTE DÉMO
+        </span>
+        <span class="text-slate-300 truncate hidden sm:inline">
+          Vitrine sur mesure — LBN Toiture (Nancy)
+        </span>
+      </div>
+      <button
+        type="button"
+        id="open-compare-btn"
+        class="inline-flex items-center gap-1.5 px-3 py-1 rounded-md bg-mineral-card hover:bg-mineral-soft text-slate-100 border border-white/15 font-semibold text-xs transition-colors whitespace-nowrap shrink-0 cursor-pointer"
+      >
+        <svg class="w-3.5 h-3.5 text-steel-light" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M16 3h5v5" />
+          <path d="M8 21H3v-5" />
+          <path d="M21 3l-7 7" />
+          <path d="M3 21l7-7" />
+        </svg>
+        <span>Comparer : Avant / Après</span>
+      </button>
+    </div>
+
+    <!-- Navigation Glassmorphism (Contrat strict à 3 zones) -->
+    <header
+      class="md:sticky md:top-10 z-40 bg-mineral-base/80 backdrop-blur-xl border-b border-white/10"
+    >
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between gap-8">
+        <!-- Zone 1 : Marque + Monogramme géométrique LBN -->
+        <a
+          href="#accueil"
+          class="inline-flex items-center gap-2.5 text-lg font-display font-bold tracking-tight text-slate-100 whitespace-nowrap shrink-0"
+        >
+          <svg
+            class="w-8 h-8 shrink-0"
+            viewBox="0 0 40 40"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true"
+          >
+            <rect width="40" height="40" rx="8" fill="#1E2638" stroke="rgba(255,255,255,0.14)" />
+            <!-- Versants de toiture asymétriques LBN -->
+            <path
+              d="M7 23L20 10.5L33 23"
+              stroke="#F1F5F9"
+              stroke-width="2.6"
+              stroke-linecap="square"
+              stroke-linejoin="miter"
+            />
+            <!-- Arête centrale / joint debout bleu acier -->
+            <path
+              d="M20 10.5V29.5"
+              stroke="#38BDF8"
+              stroke-width="2.2"
+              stroke-linecap="square"
+            />
+            <!-- Chéneau / ligne de rive -->
+            <path
+              d="M10.5 29.5H29.5"
+              stroke="#94A3B8"
+              stroke-width="2.2"
+              stroke-linecap="square"
+            />
+            <rect x="26.5" y="12.5" width="3.5" height="5.5" fill="#38BDF8" />
+          </svg>
+          <span>LBN Toiture</span>
+        </a>
+
+        <!-- Zone 2 : 4 liens de navigation concis -->
+        <nav aria-label="Navigation principale" class="hidden md:flex items-center gap-7 text-sm font-medium text-slate-300">
+          <a href="#prestations" class="hover:text-steel-light transition-colors whitespace-nowrap shrink-0">
+            Prestations
+          </a>
+          <a href="#avis" class="hover:text-steel-light transition-colors whitespace-nowrap shrink-0">
+            Avis Google
+          </a>
+          <a href="#devis" class="hover:text-steel-light transition-colors whitespace-nowrap shrink-0">
+            Devis SMS
+          </a>
+          <a href="#horaires-acces" class="hover:text-steel-light transition-colors whitespace-nowrap shrink-0">
+            Horaires &amp; Accès
+          </a>
+        </nav>
+
+        <!-- Zone 3 : 1 action principale -->
+        <div class="flex items-center shrink-0">
+          <a
+            href="#devis"
+            class="inline-flex items-center justify-center px-4 py-2.5 rounded-lg bg-steel-light hover:bg-steel-bright text-mineral-base text-sm font-bold transition-colors whitespace-nowrap shrink-0 min-h-[40px]"
+          >
+            Demander un devis
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <main id="accueil">
+      <!-- 2. Accroche Locale (Hero Split-Screen : Ardoise Minérale Tempérée #12161F) -->
+      <section class="hero-spotlight zinc-seam-bg bg-mineral-base border-b border-white/10">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 py-12 sm:py-16 lg:py-20">
+          <div class="grid lg:grid-cols-12 gap-8 lg:gap-12 items-stretch">
+            <!-- Colonne gauche : Qui, Où, Confiance, Actions immédiates -->
+            <div class="lg:col-span-7 flex flex-col justify-center">
+              <div class="flex flex-wrap items-center gap-x-3 gap-y-1 text-sm font-medium text-slate-300 mb-4">
+                <span class="text-steel-light font-semibold">Couvreur à Nancy</span>
+                <span aria-hidden="true" class="text-slate-600">·</span>
+                <span>2 Rue Virginie Mauvais, 54000 Nancy</span>
+              </div>
+
+              <h1
+                class="font-display font-extrabold text-slate-100 tracking-tight leading-[1.08] mb-5"
+                style="font-size: clamp(2.25rem, 4.2vw, 3.65rem); text-wrap: balance;"
+              >
+                Couverture, zinguerie et dépannage toiture à Nancy.
+              </h1>
+
+              <p class="text-base sm:text-lg text-slate-300 leading-relaxed max-w-xl mb-7">
+                LBN Toiture réalise vos travaux de couverture en tuile mécanique ou béton, gouttière
+                zinc, bardage ardoise et bac acier, hydrofuge, isolation sous toiture et réparation
+                rapide de toiture.
+              </p>
+
+              <!-- Preuve immédiate : Note Google 5/5 (518 avis) -->
+              <div
+                class="inline-flex flex-wrap items-center gap-4 px-4 py-3 rounded-xl bg-mineral-elevated/90 backdrop-blur-md border border-white/10 mb-8 w-fit"
+              >
+                <div class="flex items-center gap-1" aria-label="Note de 5 sur 5">
+                  <svg class="w-5 h-5 text-amber-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" /></svg>
+                  <svg class="w-5 h-5 text-amber-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" /></svg>
+                  <svg class="w-5 h-5 text-amber-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" /></svg>
+                  <svg class="w-5 h-5 text-amber-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" /></svg>
+                  <svg class="w-5 h-5 text-amber-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" /></svg>
+                </div>
+                <div class="text-sm text-slate-100 tabular-nums">
+                  <strong class="font-bold">5 / 5</strong>
+                  <span class="text-slate-500 mx-1.5">·</span>
+                  <span>518 avis vérifiés Google</span>
+                </div>
+              </div>
+
+              <!-- Actions rapides : Appel + Devis + Itinéraire -->
+              <div class="flex flex-col sm:flex-row sm:flex-wrap items-stretch sm:items-center gap-3">
+                <a
+                  href="tel:+33XXXXXXXXX"
+                  class="inline-flex items-center justify-center gap-2.5 px-6 py-3.5 rounded-xl bg-steel-light hover:bg-steel-bright text-mineral-base font-bold text-base transition-colors whitespace-nowrap min-h-[48px]"
+                >
+                  <svg class="w-5 h-5 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                  </svg>
+                  <span>Appeler LBN Toiture</span>
+                </a>
+
+                <a
+                  href="#devis"
+                  class="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl bg-mineral-card hover:bg-mineral-soft text-slate-100 border border-white/15 font-semibold text-base transition-colors whitespace-nowrap min-h-[48px]"
+                >
+                  <span>Devis rapide par SMS</span>
+                  <svg class="w-4 h-4 text-steel-light shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M5 12h14" />
+                    <path d="m12 5 7 7-7 7" />
+                  </svg>
+                </a>
+
+                <a
+                  href="https://www.google.com/maps/search/?api=1&query=2+Rue+Virginie+Mauvais+54000+Nancy"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="inline-flex items-center justify-center gap-2 px-5 py-3.5 rounded-xl bg-mineral-elevated/70 hover:bg-mineral-soft text-slate-200 border border-white/10 font-semibold text-sm transition-colors whitespace-nowrap min-h-[48px]"
+                >
+                  <svg class="w-4 h-4 text-steel-light shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" />
+                    <circle cx="12" cy="10" r="3" />
+                  </svg>
+                  <span>Itinéraire</span>
+                </a>
+              </div>
+
+              <p class="mt-3 text-xs text-slate-400">
+                Téléphone direct : <span class="font-medium text-slate-200">[À compléter depuis Google Maps ou PagesJaunes]</span>
+              </p>
+            </div>
+
+            <!-- Colonne droite : Fiche Artisan Verre Fumé & Coupe Technique Toiture -->
+            <div class="lg:col-span-5 flex">
+              <div
+                class="w-full rounded-2xl bg-mineral-elevated/90 backdrop-blur-xl text-slate-100 p-6 sm:p-8 flex flex-col justify-between border border-white/10"
+              >
+                <div>
+                  <!-- Schéma architectural minimaliste de couverture & zinguerie -->
+                  <div class="rounded-xl bg-mineral-base/80 border border-white/10 p-5 mb-6">
+                    <svg
+                      viewBox="0 0 360 150"
+                      class="w-full h-auto"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      role="img"
+                      aria-label="Schéma technique de toiture : couverture tuile et ardoise, chéneau, gouttière zinc, planche de rive et descente d'eau pluviale"
+                    >
+                      <path d="M40 105L180 28L320 105" stroke="#38BDF8" stroke-width="2" stroke-dasharray="4 4" />
+                      <path d="M24 108L180 20L336 108" stroke="#F1F5F9" stroke-width="3.5" stroke-linecap="square" />
+                      <line x1="80" y1="77" x2="180" y2="20" stroke="#475569" stroke-width="1.2" />
+                      <line x1="130" y1="49" x2="180" y2="20" stroke="#475569" stroke-width="1.2" />
+                      <line x1="230" y1="49" x2="180" y2="20" stroke="#475569" stroke-width="1.2" />
+                      <line x1="280" y1="77" x2="180" y2="20" stroke="#475569" stroke-width="1.2" />
+                      <line x1="65" y1="85" x2="295" y2="85" stroke="#334155" stroke-width="1.2" />
+                      <line x1="108" y1="61" x2="252" y2="61" stroke="#334155" stroke-width="1.2" />
+                      <rect x="20" y="108" width="12" height="8" rx="1" fill="#38BDF8" />
+                      <rect x="328" y="108" width="12" height="8" rx="1" fill="#38BDF8" />
+                      <path d="M334 116V142" stroke="#94A3B8" stroke-width="3" stroke-linecap="round" />
+                      <path d="M44 108V142H316V108" stroke="#334155" stroke-width="2" />
+                      <text x="180" y="132" text-anchor="middle" fill="#94A3B8" font-size="10" font-family="DM Sans, sans-serif">
+                        Couverture · Zinguerie · Bardage · Isolation
+                      </text>
+                    </svg>
+                  </div>
+
+                  <h2 class="font-display font-bold text-xl text-slate-100 mb-4">
+                    Fiche pratique artisan
+                  </h2>
+
+                  <dl class="space-y-4 text-sm">
+                    <div class="flex items-start justify-between gap-4 pb-3 border-b border-white/10">
+                      <dt class="text-slate-400 shrink-0">Entreprise</dt>
+                      <dd class="text-right font-semibold text-slate-100">LBN Toiture (Quentin Lebrun)</dd>
+                    </div>
+                    <div class="flex items-start justify-between gap-4 pb-3 border-b border-white/10">
+                      <dt class="text-slate-400 shrink-0">Adresse</dt>
+                      <dd class="text-right font-medium text-slate-200">
+                        2 Rue Virginie Mauvais<br />54000 Nancy
+                      </dd>
+                    </div>
+                    <div class="flex items-start justify-between gap-4 pb-3 border-b border-white/10">
+                      <dt class="text-slate-400 shrink-0">Horaires</dt>
+                      <dd class="text-right font-medium text-slate-200 tabular-nums">
+                        Lundi au Samedi<br />8h00 – 18h00
+                      </dd>
+                    </div>
+                    <div class="flex items-start justify-between gap-4 pb-3 border-b border-white/10">
+                      <dt class="text-slate-400 shrink-0">Téléphone</dt>
+                      <dd class="text-right font-medium text-slate-300">
+                        [À compléter depuis Google Maps ou PagesJaunes]
+                      </dd>
+                    </div>
+                    <div class="flex items-start justify-between gap-4">
+                      <dt class="text-slate-400 shrink-0">SIREN</dt>
+                      <dd class="text-right font-medium text-slate-200 tabular-nums">978 047 165</dd>
+                    </div>
+                  </dl>
+                </div>
+
+                <div class="mt-6 pt-5 border-t border-white/10">
+                  <a
+                    href="#devis"
+                    class="w-full inline-flex items-center justify-center gap-2 px-4 py-3 rounded-xl bg-steel-light hover:bg-steel-bright text-mineral-base font-bold text-sm transition-colors"
+                  >
+                    <span>Préparer une demande de devis</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 3. Prestations Claires & Interactives (Surfaces surélevées #1A2130 / #1E2638) -->
+      <section id="prestations" class="py-16 sm:py-20 bg-[#161C28] border-b border-white/10">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6">
+          <div class="flex flex-col lg:flex-row lg:items-end justify-between gap-6 mb-10 reveal-block">
+            <div>
+              <p class="text-sm font-semibold text-steel-light mb-2">
+                Savoir-faire artisanal à Nancy
+              </p>
+              <h2
+                class="font-display font-bold text-slate-100 tracking-tight text-3xl sm:text-4xl"
+                style="text-wrap: balance;"
+              >
+                Prestations de couverture, zinguerie et façade
+              </h2>
+            </div>
+
+            <!-- Filtres interactifs par famille de travaux -->
+            <div
+              role="tablist"
+              aria-label="Filtrer les prestations par catégorie"
+              class="flex flex-wrap items-center gap-1.5 p-1.5 rounded-xl bg-mineral-base border border-white/10 w-fit"
+            >
+              <button
+                type="button"
+                role="tab"
+                aria-selected="true"
+                data-filter="all"
+                class="filter-tab px-3.5 py-2 rounded-lg text-xs sm:text-sm font-bold bg-steel-light text-mineral-base transition-colors whitespace-nowrap shrink-0 cursor-pointer"
+              >
+                Toutes (13)
+              </button>
+              <button
+                type="button"
+                role="tab"
+                aria-selected="false"
+                data-filter="couverture"
+                class="filter-tab px-3.5 py-2 rounded-lg text-xs sm:text-sm font-medium text-slate-300 hover:text-white transition-colors whitespace-nowrap shrink-0 cursor-pointer"
+              >
+                Couverture &amp; Bardage
+              </button>
+              <button
+                type="button"
+                role="tab"
+                aria-selected="false"
+                data-filter="zinguerie"
+                class="filter-tab px-3.5 py-2 rounded-lg text-xs sm:text-sm font-medium text-slate-300 hover:text-white transition-colors whitespace-nowrap shrink-0 cursor-pointer"
+              >
+                Zinguerie &amp; Eaux pluviales
+              </button>
+              <button
+                type="button"
+                role="tab"
+                aria-selected="false"
+                data-filter="entretien"
+                class="filter-tab px-3.5 py-2 rounded-lg text-xs sm:text-sm font-medium text-slate-300 hover:text-white transition-colors whitespace-nowrap shrink-0 cursor-pointer"
+              >
+                Entretien, Isolation &amp; Dépannage
+              </button>
+            </div>
+          </div>
+
+          <!-- Grille Bento des 13 vraies prestations -->
+          <div id="services-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5">
+            <!-- Carte phare 1 : Tuile mécanique & Tuile béton (col-span-2) -->
+            <article
+              data-category="couverture"
+              class="service-card md:col-span-2 group rounded-2xl bg-mineral-card border border-white/10 p-6 sm:p-7 hover:-translate-y-1 hover:border-steel-light/50 transition-all duration-200 flex flex-col justify-between reveal-block"
+            >
+              <div>
+                <div class="flex items-center justify-between gap-4 mb-4">
+                  <span class="text-xs font-semibold text-steel-light">01 · Couverture traditionnelle &amp; neuve</span>
+                  <svg class="w-5 h-5 text-slate-400 group-hover:text-steel-light transition-colors" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+                    <polyline points="9 22 9 12 15 12 15 22" />
+                  </svg>
+                </div>
+                <div class="grid sm:grid-cols-2 gap-5">
+                  <div>
+                    <h3 class="font-display font-bold text-xl text-slate-100 mb-2">
+                      Tuile mécanique
+                    </h3>
+                    <p class="text-sm text-slate-300 leading-relaxed">
+                      Pose, remaniement et remplacement de couvertures en tuiles mécaniques à emboîtement pour garantir l'étanchéité et la tenue de votre toit.
+                    </p>
+                  </div>
+                  <div class="sm:border-l sm:border-white/10 sm:pl-5">
+                    <h3 class="font-display font-bold text-xl text-slate-100 mb-2">
+                      Tuile béton
+                    </h3>
+                    <p class="text-sm text-slate-300 leading-relaxed">
+                      Installation et rénovation de toitures en tuiles béton résistantes aux intempéries et adaptées aux pentes de l'habitat local.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="mt-6 pt-4 border-t border-white/10 flex flex-wrap items-center gap-5">
+                <button
+                  type="button"
+                  data-select-service="Tuile mécanique"
+                  class="select-service-btn text-sm font-semibold text-steel-light hover:text-steel-bright inline-flex items-center gap-1.5 cursor-pointer"
+                >
+                  <span>Devis Tuile mécanique</span>
+                  <span aria-hidden="true">&rarr;</span>
+                </button>
+                <button
+                  type="button"
+                  data-select-service="Tuile béton"
+                  class="select-service-btn text-sm font-semibold text-slate-300 hover:text-steel-light inline-flex items-center gap-1.5 cursor-pointer"
+                >
+                  <span>Devis Tuile béton</span>
+                  <span aria-hidden="true">&rarr;</span>
+                </button>
+              </div>
+            </article>
+
+            <!-- Carte phare 2 : Dépannage & Réparation toiture (Accent minéral) -->
+            <article
+              data-category="entretien"
+              class="service-card group rounded-2xl bg-mineral-soft border border-steel-light/30 p-6 sm:p-7 hover:-translate-y-1 hover:border-steel-light transition-all duration-200 flex flex-col justify-between reveal-block"
+            >
+              <div>
+                <div class="flex items-center justify-between gap-4 mb-4">
+                  <span class="text-xs font-semibold text-steel-light">02 · Intervention &amp; Étanchéité</span>
+                  <svg class="w-5 h-5 text-steel-light" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z" />
+                  </svg>
+                </div>
+                <h3 class="font-display font-bold text-xl text-slate-100 mb-2">
+                  Dépannage toiture &amp; Réparation de toiture
+                </h3>
+                <p class="text-sm text-slate-200 leading-relaxed">
+                  Recherche de fuite, mise hors d'eau rapide, remplacement de tuiles cassées ou déplacées et reprise d'étanchéité.
+                </p>
+              </div>
+              <div class="mt-6 pt-4 border-t border-white/10 flex flex-wrap items-center gap-4">
+                <button
+                  type="button"
+                  data-select-service="Dépannage toiture"
+                  class="select-service-btn text-sm font-semibold text-steel-light hover:text-steel-bright inline-flex items-center gap-1.5 cursor-pointer"
+                >
+                  <span>Dépannage urgent</span>
+                  <span aria-hidden="true">&rarr;</span>
+                </button>
+                <button
+                  type="button"
+                  data-select-service="Réparation de toiture"
+                  class="select-service-btn text-sm font-semibold text-slate-200 hover:text-white inline-flex items-center gap-1.5 cursor-pointer"
+                >
+                  <span>Réparation</span>
+                  <span aria-hidden="true">&rarr;</span>
+                </button>
+              </div>
+            </article>
+
+            <!-- 3. Gouttière zinc -->
+            <article
+              data-category="zinguerie"
+              class="service-card group rounded-2xl bg-mineral-card border border-white/10 p-6 hover:-translate-y-1 hover:border-steel-light/50 transition-all duration-200 flex flex-col justify-between reveal-block"
+            >
+              <div>
+                <span class="text-xs font-semibold text-steel-light block mb-3">03 · Zinguerie</span>
+                <h3 class="font-display font-bold text-lg text-slate-100 mb-2">Gouttière zinc</h3>
+                <p class="text-sm text-slate-300 leading-relaxed">
+                  Façonnage, soudure et pose de gouttières en zinc durables pour protéger vos façades des eaux de ruissellement.
+                </p>
+              </div>
+              <div class="mt-5 pt-3 border-t border-white/10">
+                <button type="button" data-select-service="Gouttière zinc" class="select-service-btn text-sm font-semibold text-steel-light hover:text-steel-bright cursor-pointer">
+                  Demander un devis &rarr;
+                </button>
+              </div>
+            </article>
+
+            <!-- 4. Gouttière -->
+            <article
+              data-category="zinguerie"
+              class="service-card group rounded-2xl bg-mineral-card border border-white/10 p-6 hover:-translate-y-1 hover:border-steel-light/50 transition-all duration-200 flex flex-col justify-between reveal-block"
+            >
+              <div>
+                <span class="text-xs font-semibold text-steel-light block mb-3">04 · Évacuation</span>
+                <h3 class="font-display font-bold text-lg text-slate-100 mb-2">Gouttière</h3>
+                <p class="text-sm text-slate-300 leading-relaxed">
+                  Pose, remplacement et réparation de gouttières avec réglage de pente et fixation renforcée.
+                </p>
+              </div>
+              <div class="mt-5 pt-3 border-t border-white/10">
+                <button type="button" data-select-service="Gouttière" class="select-service-btn text-sm font-semibold text-steel-light hover:text-steel-bright cursor-pointer">
+                  Demander un devis &rarr;
+                </button>
+              </div>
+            </article>
+
+            <!-- 5. Descente d'eau pluviale -->
+            <article
+              data-category="zinguerie"
+              class="service-card group rounded-2xl bg-mineral-card border border-white/10 p-6 hover:-translate-y-1 hover:border-steel-light/50 transition-all duration-200 flex flex-col justify-between reveal-block"
+            >
+              <div>
+                <span class="text-xs font-semibold text-steel-light block mb-3">05 · Évacuation</span>
+                <h3 class="font-display font-bold text-lg text-slate-100 mb-2">Descente d'eau pluviale</h3>
+                <p class="text-sm text-slate-300 leading-relaxed">
+                  Installation et raccordement de tuyaux de descente, coudes, dauphins et colliers en façade.
+                </p>
+              </div>
+              <div class="mt-5 pt-3 border-t border-white/10">
+                <button type="button" data-select-service="Descente d'eau pluviale" class="select-service-btn text-sm font-semibold text-steel-light hover:text-steel-bright cursor-pointer">
+                  Demander un devis &rarr;
+                </button>
+              </div>
+            </article>
+
+            <!-- 6. Nettoyage de chéneau -->
+            <article
+              data-category="zinguerie"
+              class="service-card group rounded-2xl bg-mineral-card border border-white/10 p-6 hover:-translate-y-1 hover:border-steel-light/50 transition-all duration-200 flex flex-col justify-between reveal-block"
+            >
+              <div>
+                <span class="text-xs font-semibold text-steel-light block mb-3">06 · Zinguerie &amp; Entretien</span>
+                <h3 class="font-display font-bold text-lg text-slate-100 mb-2">Nettoyage de chéneau</h3>
+                <p class="text-sm text-slate-300 leading-relaxed">
+                  Dégagement des feuilles, mousses et dépôts dans les chéneaux pour prévenir tout débordement et infiltration.
+                </p>
+              </div>
+              <div class="mt-5 pt-3 border-t border-white/10">
+                <button type="button" data-select-service="Nettoyage de chéneau" class="select-service-btn text-sm font-semibold text-steel-light hover:text-steel-bright cursor-pointer">
+                  Demander un devis &rarr;
+                </button>
+              </div>
+            </article>
+
+            <!-- 7. Bardage ardoise -->
+            <article
+              data-category="couverture"
+              class="service-card group rounded-2xl bg-mineral-card border border-white/10 p-6 hover:-translate-y-1 hover:border-steel-light/50 transition-all duration-200 flex flex-col justify-between reveal-block"
+            >
+              <div>
+                <span class="text-xs font-semibold text-steel-light block mb-3">07 · Façade &amp; Habillage</span>
+                <h3 class="font-display font-bold text-lg text-slate-100 mb-2">Bardage ardoise</h3>
+                <p class="text-sm text-slate-300 leading-relaxed">
+                  Protection et habillage de pignons et murs exposés en ardoise pour une étanchéité durable et soignée.
+                </p>
+              </div>
+              <div class="mt-5 pt-3 border-t border-white/10">
+                <button type="button" data-select-service="Bardage ardoise" class="select-service-btn text-sm font-semibold text-steel-light hover:text-steel-bright cursor-pointer">
+                  Demander un devis &rarr;
+                </button>
+              </div>
+            </article>
+
+            <!-- 8. Bardage bac acier -->
+            <article
+              data-category="couverture"
+              class="service-card group rounded-2xl bg-mineral-card border border-white/10 p-6 hover:-translate-y-1 hover:border-steel-light/50 transition-all duration-200 flex flex-col justify-between reveal-block"
+            >
+              <div>
+                <span class="text-xs font-semibold text-steel-light block mb-3">08 · Façade &amp; Annexe</span>
+                <h3 class="font-display font-bold text-lg text-slate-100 mb-2">Bardage bac acier</h3>
+                <p class="text-sm text-slate-300 leading-relaxed">
+                  Pose de bardage en bac acier pour façades, garages, extensions et bâtiments nécessitant une enveloppe robuste.
+                </p>
+              </div>
+              <div class="mt-5 pt-3 border-t border-white/10">
+                <button type="button" data-select-service="Bardage bac acier" class="select-service-btn text-sm font-semibold text-steel-light hover:text-steel-bright cursor-pointer">
+                  Demander un devis &rarr;
+                </button>
+              </div>
+            </article>
+
+            <!-- 9. Planche de rive -->
+            <article
+              data-category="couverture"
+              class="service-card group rounded-2xl bg-mineral-card border border-white/10 p-6 hover:-translate-y-1 hover:border-steel-light/50 transition-all duration-200 flex flex-col justify-between reveal-block"
+            >
+              <div>
+                <span class="text-xs font-semibold text-steel-light block mb-3">09 · Finition de toiture</span>
+                <h3 class="font-display font-bold text-lg text-slate-100 mb-2">Planche de rive</h3>
+                <p class="text-sm text-slate-300 leading-relaxed">
+                  Pose, remplacement et habillage des planches de rive pour protéger les extrémités de charpente et soutenir vos gouttières.
+                </p>
+              </div>
+              <div class="mt-5 pt-3 border-t border-white/10">
+                <button type="button" data-select-service="Planche de rive" class="select-service-btn text-sm font-semibold text-steel-light hover:text-steel-bright cursor-pointer">
+                  Demander un devis &rarr;
+                </button>
+              </div>
+            </article>
+
+            <!-- 10. Hydrofuge de toiture -->
+            <article
+              data-category="entretien"
+              class="service-card group rounded-2xl bg-mineral-card border border-white/10 p-6 hover:-translate-y-1 hover:border-steel-light/50 transition-all duration-200 flex flex-col justify-between reveal-block"
+            >
+              <div>
+                <span class="text-xs font-semibold text-steel-light block mb-3">10 · Protection &amp; Entretien</span>
+                <h3 class="font-display font-bold text-lg text-slate-100 mb-2">Hydrofuge de toiture</h3>
+                <p class="text-sm text-slate-300 leading-relaxed">
+                  Traitement hydrofuge pour imperméabiliser les matériaux de couverture et limiter la porosité face au gel et aux pluies.
+                </p>
+              </div>
+              <div class="mt-5 pt-3 border-t border-white/10">
+                <button type="button" data-select-service="Hydrofuge de toiture" class="select-service-btn text-sm font-semibold text-steel-light hover:text-steel-bright cursor-pointer">
+                  Demander un devis &rarr;
+                </button>
+              </div>
+            </article>
+
+            <!-- 11. Isolation sous toiture -->
+            <article
+              data-category="entretien"
+              class="service-card group rounded-2xl bg-mineral-card border border-white/10 p-6 hover:-translate-y-1 hover:border-steel-light/50 transition-all duration-200 flex flex-col justify-between reveal-block"
+            >
+              <div>
+                <span class="text-xs font-semibold text-steel-light block mb-3">11 · Performance thermique</span>
+                <h3 class="font-display font-bold text-lg text-slate-100 mb-2">Isolation sous toiture</h3>
+                <p class="text-sm text-slate-300 leading-relaxed">
+                  Mise en œuvre d'isolation sous toiture pour réduire les déperditions de chaleur et améliorer le confort été comme hiver.
+                </p>
+              </div>
+              <div class="mt-5 pt-3 border-t border-white/10">
+                <button type="button" data-select-service="Isolation sous toiture" class="select-service-btn text-sm font-semibold text-steel-light hover:text-steel-bright cursor-pointer">
+                  Demander un devis &rarr;
+                </button>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- 4. Zone de respiration claire teintée pierre douce (#EFECE6) : Preuve Sociale (Avis Google) -->
+      <section id="avis" class="py-16 sm:py-20 bg-stoneLight-warm text-slate-900 border-b border-stone-300/80">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6">
+          <div class="grid lg:grid-cols-12 gap-8 items-start reveal-block">
+            <div class="lg:col-span-5">
+              <p class="text-sm font-bold text-steel-dark mb-2">Confiance &amp; Réputation locale</p>
+              <h2
+                class="font-display font-bold text-slate-900 tracking-tight text-3xl sm:text-4xl mb-4"
+                style="text-wrap: balance;"
+              >
+                Une satisfaction client vérifiée sur Google
+              </h2>
+              <p class="text-slate-700 leading-relaxed mb-6">
+                Les retours clients sur la fiche Google de LBN Toiture reflètent la qualité des interventions réalisées à Nancy et dans ses environs.
+              </p>
+
+              <div class="rounded-2xl bg-stoneLight-card border border-stone-300 p-6">
+                <div class="flex items-baseline gap-2 tabular-nums">
+                  <span class="font-display font-extrabold text-5xl text-slate-900">5/5</span>
+                  <span class="text-sm font-medium text-slate-600">Note Google</span>
+                </div>
+                <div class="flex items-center gap-1 my-3" aria-hidden="true">
+                  <svg class="w-5 h-5 text-amber-500" viewBox="0 0 20 20" fill="currentColor"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" /></svg>
+                  <svg class="w-5 h-5 text-amber-500" viewBox="0 0 20 20" fill="currentColor"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" /></svg>
+                  <svg class="w-5 h-5 text-amber-500" viewBox="0 0 20 20" fill="currentColor"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" /></svg>
+                  <svg class="w-5 h-5 text-amber-500" viewBox="0 0 20 20" fill="currentColor"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" /></svg>
+                  <svg class="w-5 h-5 text-amber-500" viewBox="0 0 20 20" fill="currentColor"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" /></svg>
+                </div>
+                <p class="text-sm font-bold text-slate-900 tabular-nums">
+                  518 avis vérifiés sur Google
+                </p>
+              </div>
+            </div>
+
+            <!-- Emplacements propres sans inventer de faux commentaires -->
+            <div class="lg:col-span-7 grid sm:grid-cols-2 gap-4">
+              <div class="rounded-2xl bg-stoneLight-card border border-dashed border-stone-400 p-6 flex flex-col justify-between min-h-[180px]">
+                <div>
+                  <div class="flex items-center justify-between text-xs text-slate-600 mb-3">
+                    <span>Avis Google vérifié</span>
+                    <span class="font-bold text-amber-700 tabular-nums">5/5</span>
+                  </div>
+                  <p class="text-sm font-medium text-slate-800 leading-relaxed">
+                    [Avis Google réel à intégrer]
+                  </p>
+                </div>
+                <p class="text-xs text-slate-600 mt-4 pt-3 border-t border-stone-300">
+                  Source : Fiche Google LBN Toiture
+                </p>
+              </div>
+
+              <div class="rounded-2xl bg-stoneLight-card border border-dashed border-stone-400 p-6 flex flex-col justify-between min-h-[180px]">
+                <div>
+                  <div class="flex items-center justify-between text-xs text-slate-600 mb-3">
+                    <span>Avis Google vérifié</span>
+                    <span class="font-bold text-amber-700 tabular-nums">5/5</span>
+                  </div>
+                  <p class="text-sm font-medium text-slate-800 leading-relaxed">
+                    [Avis Google réel à intégrer]
+                  </p>
+                </div>
+                <p class="text-xs text-slate-600 mt-4 pt-3 border-t border-stone-300">
+                  Source : Fiche Google LBN Toiture
+                </p>
+              </div>
+
+              <div class="sm:col-span-2 rounded-2xl bg-stoneLight-card border border-dashed border-stone-400 p-6 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+                <div>
+                  <p class="text-sm font-semibold text-slate-800">
+                    [Avis Google réel à intégrer — Sélection parmi les 518 avis vérifiés]
+                  </p>
+                  <p class="text-xs text-slate-600 mt-1">
+                    Emplacement prévu pour l'affichage dynamique du widget ou d'extraits authentiques Google.
+                  </p>
+                </div>
+                <a
+                  href="https://www.google.com/maps/search/?api=1&query=LBN+Toiture+2+Rue+Virginie+Mauvais+54000+Nancy"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="inline-flex items-center justify-center px-4 py-2.5 rounded-lg bg-mineral-base hover:bg-mineral-elevated text-slate-100 text-sm font-semibold transition-colors whitespace-nowrap shrink-0"
+                >
+                  Consulter la fiche Google &rarr;
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 5. Zone claire gris ardoise doux (#E6EAEF) : Formulaire de Devis / Contact Rapide SMS -->
+      <section id="devis" class="py-16 sm:py-20 bg-stoneLight-slate text-slate-900 border-b border-slate-300">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6">
+          <div class="grid lg:grid-cols-12 gap-8 lg:gap-12 items-start reveal-block">
+            <div class="lg:col-span-5">
+              <p class="text-sm font-bold text-steel-dark mb-2">Contact direct artisan</p>
+              <h2
+                class="font-display font-bold text-slate-900 tracking-tight text-3xl sm:text-4xl mb-4"
+                style="text-wrap: balance;"
+              >
+                Demandez votre devis rapide par SMS
+              </h2>
+              <p class="text-slate-700 leading-relaxed mb-6">
+                Décrivez votre besoin en 30 secondes. Le formulaire prépare un message structuré prêt à être envoyé directement par SMS (compatible Android et iPhone) ou copié en un clic depuis un ordinateur.
+              </p>
+
+              <div class="rounded-2xl bg-stoneLight-card border border-slate-300 p-6 space-y-4">
+                <div class="flex items-start gap-3">
+                  <span class="w-7 h-7 rounded-lg bg-steel-dark text-white font-display font-bold text-sm flex items-center justify-center shrink-0">1</span>
+                  <p class="text-sm text-slate-700">
+                    <strong class="text-slate-900 block">Sélectionnez la prestation</strong>
+                    Couverture, zinguerie, bardage, isolation ou dépannage urgent.
+                  </p>
+                </div>
+                <div class="flex items-start gap-3">
+                  <span class="w-7 h-7 rounded-lg bg-steel-dark text-white font-display font-bold text-sm flex items-center justify-center shrink-0">2</span>
+                  <p class="text-sm text-slate-700">
+                    <strong class="text-slate-900 block">Envoi SMS instantané</strong>
+                    Votre application Messages s'ouvre avec votre demande déjà rédigée.
+                  </p>
+                </div>
+                <div class="flex items-start gap-3">
+                  <span class="w-7 h-7 rounded-lg bg-steel-dark text-white font-display font-bold text-sm flex items-center justify-center shrink-0">3</span>
+                  <p class="text-sm text-slate-700">
+                    <strong class="text-slate-900 block">Disponible du lundi au samedi</strong>
+                    Réponse aux horaires d'ouverture : 8h00 – 18h00.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="lg:col-span-7">
+              <div class="rounded-2xl bg-stoneLight-card border border-slate-300 p-6 sm:p-8">
+                <form id="quote-form" novalidate class="space-y-5">
+                  <div>
+                    <label for="service-select" class="block text-sm font-bold text-slate-900 mb-2">
+                      Prestation souhaitée
+                    </label>
+                    <select
+                      id="service-select"
+                      name="service"
+                      required
+                      class="w-full rounded-xl border border-slate-300 bg-[#FAF9F6] px-4 py-3 text-sm sm:text-base text-slate-900 focus:border-steel-dark focus:ring-2 focus:ring-steel-dark/20 outline-none transition"
+                    >
+                      <option value="Tuile mécanique">Tuile mécanique</option>
+                      <option value="Tuile béton">Tuile béton</option>
+                      <option value="Gouttière zinc">Gouttière zinc</option>
+                      <option value="Gouttière">Gouttière</option>
+                      <option value="Descente d'eau pluviale">Descente d'eau pluviale</option>
+                      <option value="Nettoyage de chéneau">Nettoyage de chéneau</option>
+                      <option value="Bardage ardoise">Bardage ardoise</option>
+                      <option value="Bardage bac acier">Bardage bac acier</option>
+                      <option value="Planche de rive">Planche de rive</option>
+                      <option value="Hydrofuge de toiture">Hydrofuge de toiture</option>
+                      <option value="Isolation sous toiture">Isolation sous toiture</option>
+                      <option value="Dépannage toiture">Dépannage toiture (urgence)</option>
+                      <option value="Réparation de toiture">Réparation de toiture</option>
+                    </select>
+                  </div>
+
+                  <div class="grid sm:grid-cols-2 gap-4">
+                    <div>
+                      <label for="client-name" class="block text-sm font-bold text-slate-900 mb-2">
+                        Votre nom
+                      </label>
+                      <input
+                        id="client-name"
+                        name="name"
+                        type="text"
+                        required
+                        autocomplete="name"
+                        placeholder="Ex. Jean Martin"
+                        class="w-full rounded-xl border border-slate-300 bg-[#FAF9F6] px-4 py-3 text-sm sm:text-base text-slate-900 placeholder:text-slate-500 focus:border-steel-dark focus:ring-2 focus:ring-steel-dark/20 outline-none transition"
+                      />
+                    </div>
+
+                    <div>
+                      <label for="client-phone" class="block text-sm font-bold text-slate-900 mb-2">
+                        Votre téléphone
+                      </label>
+                      <input
+                        id="client-phone"
+                        name="phone"
+                        type="tel"
+                        required
+                        autocomplete="tel"
+                        placeholder="Ex. 06 12 34 56 78"
+                        class="w-full rounded-xl border border-slate-300 bg-[#FAF9F6] px-4 py-3 text-sm sm:text-base text-slate-900 placeholder:text-slate-500 focus:border-steel-dark focus:ring-2 focus:ring-steel-dark/20 outline-none transition tabular-nums"
+                      />
+                    </div>
+                  </div>
+
+                  <div>
+                    <label for="client-details" class="block text-sm font-bold text-slate-900 mb-2">
+                      Détails de votre projet ou urgence
+                    </label>
+                    <textarea
+                      id="client-details"
+                      name="details"
+                      rows="4"
+                      placeholder="Commune ou quartier à Nancy, type de toiture, problème constaté ou surface estimée..."
+                      class="w-full rounded-xl border border-slate-300 bg-[#FAF9F6] px-4 py-3 text-sm sm:text-base text-slate-900 placeholder:text-slate-500 focus:border-steel-dark focus:ring-2 focus:ring-steel-dark/20 outline-none transition resize-y"
+                    ></textarea>
+                  </div>
+
+                  <p
+                    id="form-error"
+                    role="alert"
+                    class="hidden text-sm font-medium text-red-800 bg-red-100 border border-red-300 rounded-xl px-4 py-3"
+                  ></p>
+
+                  <button
+                    type="submit"
+                    class="w-full inline-flex items-center justify-center gap-2.5 px-6 py-4 rounded-xl bg-steel-dark hover:bg-steel-darkHover text-white font-semibold text-base transition-colors cursor-pointer min-h-[52px]"
+                  >
+                    <svg class="w-5 h-5 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
+                    </svg>
+                    <span>Préparer et envoyer par SMS</span>
+                  </button>
+                </form>
+
+                <!-- Panneau résultat SMS natif Android/iOS + Copier + Secours Appel -->
+                <div
+                  id="sms-result-panel"
+                  class="hidden mt-6 pt-6 border-t border-slate-300 space-y-4"
+                  aria-live="polite"
+                >
+                  <div class="flex items-center justify-between gap-2">
+                    <span class="text-sm font-bold text-emerald-900">
+                      Demande prête à être envoyée par SMS
+                    </span>
+                    <span class="text-xs text-slate-600">Compatible Android &amp; iOS</span>
+                  </div>
+
+                  <pre
+                    id="sms-preview-text"
+                    class="whitespace-pre-wrap font-sans text-sm text-slate-900 bg-stoneLight-warm border border-slate-300 rounded-xl p-4 leading-relaxed"
+                  ></pre>
+
+                  <div class="grid sm:grid-cols-3 gap-3">
+                    <a
+                      id="sms-native-link"
+                      href="sms:+33XXXXXXXXX?body="
+                      class="sm:col-span-1 inline-flex items-center justify-center gap-2 px-4 py-3 rounded-xl bg-steel-dark hover:bg-steel-darkHover text-white font-semibold text-sm transition-colors text-center min-h-[44px]"
+                    >
+                      <span>Ouvrir SMS</span>
+                    </a>
+
+                    <button
+                      type="button"
+                      id="copy-sms-btn"
+                      class="sm:col-span-1 inline-flex items-center justify-center gap-2 px-4 py-3 rounded-xl bg-mineral-base hover:bg-mineral-elevated text-white font-semibold text-sm transition-colors cursor-pointer min-h-[44px]"
+                    >
+                      <span>Copier le message</span>
+                    </button>
+
+                    <a
+                      href="tel:+33XXXXXXXXX"
+                      class="sm:col-span-1 inline-flex items-center justify-center gap-2 px-4 py-3 rounded-xl bg-[#FAF9F6] border border-slate-400 hover:border-slate-900 text-slate-900 font-semibold text-sm transition-colors text-center min-h-[44px]"
+                    >
+                      <span>Appeler</span>
+                    </a>
+                  </div>
+
+                  <p id="copy-feedback" class="hidden text-xs font-bold text-emerald-800">
+                    Message copié dans le presse-papiers.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 6. Infos Pratiques (Retour Ardoise Minérale #12161F : Horaires, Adresse, Itinéraire) -->
+      <section id="horaires-acces" class="py-16 sm:py-20 bg-mineral-base">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6">
+          <div class="grid md:grid-cols-12 gap-6 lg:gap-8 reveal-block">
+            <div class="md:col-span-5 rounded-2xl bg-mineral-card border border-white/10 p-6 sm:p-8 flex flex-col justify-between">
+              <div>
+                <p class="text-sm font-semibold text-steel-light mb-2">Horaires d'ouverture</p>
+                <h2 class="font-display font-bold text-2xl text-slate-100 mb-6">
+                  LBN Toiture à votre écoute
+                </h2>
+                <dl class="space-y-3 text-sm tabular-nums">
+                  <div class="flex items-center justify-between py-2 border-b border-white/10">
+                    <dt class="font-medium text-slate-300">Lundi – Vendredi</dt>
+                    <dd class="font-semibold text-slate-100">08:00 – 18:00</dd>
+                  </div>
+                  <div class="flex items-center justify-between py-2 border-b border-white/10">
+                    <dt class="font-medium text-slate-300">Samedi</dt>
+                    <dd class="font-semibold text-slate-100">08:00 – 18:00</dd>
+                  </div>
+                  <div class="flex items-center justify-between py-2">
+                    <dt class="font-medium text-slate-400">Dimanche</dt>
+                    <dd class="font-medium text-slate-400">Fermé</dd>
+                  </div>
+                </dl>
+              </div>
+              <p class="mt-6 text-xs text-slate-400">
+                Téléphone : [À compléter depuis Google Maps ou PagesJaunes]
+              </p>
+            </div>
+
+            <div class="md:col-span-7 rounded-2xl bg-mineral-elevated border border-white/10 p-6 sm:p-8 flex flex-col justify-between">
+              <div>
+                <p class="text-sm font-semibold text-steel-light mb-2">Localisation &amp; Zone d'intervention</p>
+                <h2 class="font-display font-bold text-2xl sm:text-3xl text-slate-100 mb-3">
+                  2 Rue Virginie Mauvais, 54000 Nancy
+                </h2>
+                <p class="text-slate-300 text-sm sm:text-base leading-relaxed max-w-xl mb-6">
+                  Entreprise implantée à Nancy (Meurthe-et-Moselle) pour vos travaux de couverture, zinguerie, bardage et dépannage toiture.
+                </p>
+              </div>
+
+              <div class="flex flex-col sm:flex-row sm:items-center gap-3 pt-4 border-t border-white/10">
+                <a
+                  href="https://www.google.com/maps/search/?api=1&query=2+Rue+Virginie+Mauvais+54000+Nancy"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="inline-flex items-center justify-center gap-2.5 px-6 py-3.5 rounded-xl bg-steel-light hover:bg-steel-bright text-mineral-base font-bold text-sm sm:text-base transition-colors whitespace-nowrap min-h-[48px]"
+                >
+                  <svg class="w-5 h-5 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" />
+                    <circle cx="12" cy="10" r="3" />
+                  </svg>
+                  <span>Ouvrir l'itinéraire Google Maps</span>
+                </a>
+                <a
+                  href="https://annuaire-entreprises.data.gouv.fr/entreprise/quentin-lebrun-lebrun-lbn-toiture-978047165"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="inline-flex items-center justify-center px-5 py-3.5 rounded-xl bg-mineral-card hover:bg-mineral-soft border border-white/10 text-slate-200 font-medium text-sm transition-colors whitespace-nowrap min-h-[48px]"
+                >
+                  Fiche légale Annuaire Entreprises &rarr;
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer propre avec bouton Mentions légales -->
+    <footer class="bg-[#0D1118] border-t border-white/10 py-10">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6">
+        <div>
+          <p class="font-display font-bold text-slate-100 text-base">LBN Toiture</p>
+          <p class="text-xs sm:text-sm text-slate-400 mt-1">
+            2 Rue Virginie Mauvais, 54000 Nancy · Lundi au Samedi, 8h à 18h · SIREN 978 047 165
+          </p>
+        </div>
+
+        <div class="flex flex-wrap items-center gap-5 text-sm">
+          <a href="#prestations" class="text-slate-300 hover:text-steel-light transition-colors">Prestations</a>
+          <a href="#devis" class="text-slate-300 hover:text-steel-light transition-colors">Devis SMS</a>
+          <button
+            type="button"
+            id="open-legal-btn"
+            class="font-semibold text-slate-100 hover:text-steel-light underline underline-offset-4 transition-colors cursor-pointer"
+          >
+            Mentions légales
+          </button>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bouton d'appel direct fixe en bas sur mobile -->
+    <div class="md:hidden fixed bottom-4 inset-x-4 z-40 shadow-2xl">
+      <a
+        href="tel:+33XXXXXXXXX"
+        class="w-full inline-flex items-center justify-center gap-2.5 px-5 py-3.5 rounded-xl bg-steel-light hover:bg-steel-bright text-mineral-base font-bold text-base transition-colors min-h-[48px]"
+      >
+        <svg class="w-5 h-5 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+        </svg>
+        <span>Appeler LBN Toiture</span>
+      </a>
+    </div>
+
+    <!-- Modale Comparer : Avant / Après -->
+    <div
+      id="compare-modal"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="compare-modal-title"
+      class="hidden fixed inset-0 z-[70] bg-black/75 backdrop-blur-sm p-4 flex items-center justify-center"
+    >
+      <div class="bg-mineral-elevated text-slate-100 rounded-2xl max-w-3xl w-full max-h-[90vh] overflow-y-auto border border-white/15 p-6 sm:p-8 shadow-2xl">
+        <div class="flex items-start justify-between gap-4 pb-4 border-b border-white/10 mb-6">
+          <div>
+            <span class="text-xs font-semibold text-steel-light">Comparatif maquette démo</span>
+            <h2 id="compare-modal-title" class="font-display font-bold text-2xl text-slate-100 mt-1">
+              Avant / Après : LBN Toiture
+            </h2>
+          </div>
+          <button
+            type="button"
+            data-close-modal="compare-modal"
+            aria-label="Fermer la fenêtre"
+            class="p-2 rounded-lg text-slate-400 hover:text-white hover:bg-white/10 transition-colors cursor-pointer"
+          >
+            <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M18 6 6 18" />
+              <path d="m6 6 12 12" />
+            </svg>
+          </button>
+        </div>
+
+        <div class="grid sm:grid-cols-2 gap-5">
+          <div class="rounded-xl bg-mineral-base border border-white/10 p-5">
+            <p class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-3">
+              Avant — Situation actuelle
+            </p>
+            <p class="font-display font-bold text-lg text-slate-100 mb-3">
+              Aucun site web officiel
+            </p>
+            <ul class="space-y-2.5 text-sm text-slate-300 leading-relaxed">
+              <li>• Présence dépendante des annuaires tiers et de la fiche Google uniquement.</li>
+              <li>• Aucun espace dédié pour présenter les 13 prestations (couverture, zinguerie, bardage, isolation).</li>
+              <li>• Pas de prise de demande de devis structurée par SMS depuis mobile ou ordinateur.</li>
+              <li>• Visibilité limitée auprès des particuliers qui comparent les artisans à Nancy avant d'appeler.</li>
+            </ul>
+          </div>
+
+          <div class="rounded-xl bg-stoneLight-warm text-slate-900 border border-steel-light/50 p-5">
+            <p class="text-xs font-bold text-steel-dark uppercase tracking-wider mb-3">
+              Après — Nouvelle vitrine
+            </p>
+            <p class="font-display font-bold text-lg text-slate-900 mb-3">
+              Vitrine claire et orientée contact
+            </p>
+            <ul class="space-y-2.5 text-sm text-slate-800 leading-relaxed">
+              <li>• Identification immédiate en 3 secondes : Couvreur à Nancy + 5/5 sur 518 avis vérifiés.</li>
+              <li>• Catalogue interactif des 13 prestations réelles filtrables par type de travaux.</li>
+              <li>• Formulaire devis SMS natif Android &amp; iOS avec copie en 1 clic sur ordinateur.</li>
+              <li>• Itinéraire Google Maps direct, bouton d'appel mobile fixe et Mentions légales conformes.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="mt-6 pt-4 border-t border-white/10 flex justify-end">
+          <button
+            type="button"
+            data-close-modal="compare-modal"
+            class="px-5 py-2.5 rounded-xl bg-steel-light hover:bg-steel-bright text-mineral-base text-sm font-bold transition-colors cursor-pointer"
+          >
+            Revenir à la vitrine
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modale Mentions légales -->
+    <div
+      id="legal-modal"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="legal-modal-title"
+      class="hidden fixed inset-0 z-[70] bg-black/75 backdrop-blur-sm p-4 flex items-center justify-center"
+    >
+      <div class="bg-stoneLight-card text-slate-900 rounded-2xl max-w-2xl w-full max-h-[90vh] overflow-y-auto border border-stone-300 p-6 sm:p-8 shadow-2xl">
+        <div class="flex items-start justify-between gap-4 pb-4 border-b border-stone-300 mb-6">
+          <div>
+            <span class="text-xs font-bold text-steel-dark">Informations réglementaires</span>
+            <h2 id="legal-modal-title" class="font-display font-bold text-2xl text-slate-900 mt-1">
+              Mentions légales
+            </h2>
+          </div>
+          <button
+            type="button"
+            data-close-modal="legal-modal"
+            aria-label="Fermer les mentions légales"
+            class="p-2 rounded-lg text-slate-600 hover:text-slate-900 hover:bg-stone-200 transition-colors cursor-pointer"
+          >
+            <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M18 6 6 18" />
+              <path d="m6 6 12 12" />
+            </svg>
+          </button>
+        </div>
+
+        <div class="space-y-6 text-sm text-slate-800 leading-relaxed">
+          <div>
+            <h3 class="font-display font-bold text-base text-slate-900 mb-2">1. Éditeur du site</h3>
+            <ul class="space-y-1.5">
+              <li><strong>Nom commercial :</strong> LBN Toiture</li>
+              <li><strong>Dirigeant / Entrepreneur :</strong> Quentin Lebrun</li>
+              <li><strong>Forme juridique :</strong> [À compléter depuis la fiche Annuaire des Entreprises]</li>
+              <li><strong>Adresse du siège :</strong> 2 Rue Virginie Mauvais, 54000 Nancy</li>
+              <li><strong>SIREN :</strong> 978 047 165 (SIRET et n° TVA : [Informations légales à compléter depuis la fiche officielle])</li>
+              <li><strong>Téléphone :</strong> [À compléter depuis Google Maps ou PagesJaunes]</li>
+              <li>
+                <strong>Fiche officielle :</strong>
+                <a
+                  href="https://annuaire-entreprises.data.gouv.fr/entreprise/quentin-lebrun-lebrun-lbn-toiture-978047165"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="text-steel-dark font-medium underline underline-offset-2 break-all"
+                >
+                  annuaire-entreprises.data.gouv.fr/entreprise/quentin-lebrun-lebrun-lbn-toiture-978047165
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="pt-4 border-t border-stone-300">
+            <h3 class="font-display font-bold text-base text-slate-900 mb-2">2. Hébergement</h3>
+            <p>
+              GitHub Inc. / GitHub Pages<br />
+              88 Colin P Kelly Jr St, San Francisco, CA 94107, États-Unis.
+            </p>
+          </div>
+
+          <div class="pt-4 border-t border-stone-300">
+            <h3 class="font-display font-bold text-base text-slate-900 mb-2">3. Données personnelles</h3>
+            <p>
+              Ce site vitrine ne stocke aucune donnée personnelle dans une base de données. Le formulaire de demande de devis prépare localement un message SMS sur votre appareil à destination directe de l'entreprise.
+            </p>
+          </div>
+        </div>
+
+        <div class="mt-6 pt-4 border-t border-stone-300 flex justify-end">
+          <button
+            type="button"
+            data-close-modal="legal-modal"
+            class="px-5 py-2.5 rounded-xl bg-mineral-base hover:bg-mineral-elevated text-white text-sm font-semibold transition-colors cursor-pointer"
+          >
+            Fermer
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      (function () {
+        // Numéro cible pour les liens tel: et sms: (à remplacer par le numéro réel vérifié)
+        const BUSINESS_PHONE = '+33XXXXXXXXX';
+
+        // 1. Barre de progression de lecture
+        const progressBar = document.getElementById('scroll-progress');
+        function updateScrollProgress() {
+          if (!progressBar) return;
+          const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+          const progress = docHeight > 0 ? Math.min(1, Math.max(0, window.scrollY / docHeight)) : 0;
+          progressBar.style.transform = 'scaleX(' + progress.toFixed(4) + ')';
+        }
+        window.addEventListener('scroll', updateScrollProgress, { passive: true });
+        updateScrollProgress();
+
+        // 2. Curseur Spotlight sur le Hero
+        const heroSection = document.querySelector('.hero-spotlight');
+        if (heroSection && window.matchMedia('(pointer: fine)').matches) {
+          heroSection.addEventListener('mousemove', function (e) {
+            const rect = heroSection.getBoundingClientRect();
+            const x = ((e.clientX - rect.left) / rect.width) * 100;
+            const y = ((e.clientY - rect.top) / rect.height) * 100;
+            heroSection.style.setProperty('--mouse-x', x.toFixed(2) + '%');
+            heroSection.style.setProperty('--mouse-y', y.toFixed(2) + '%');
+          });
+        }
+
+        // 3. Chorégraphie au Scroll (IntersectionObserver)
+        const revealBlocks = document.querySelectorAll('.reveal-block');
+        if ('IntersectionObserver' in window) {
+          const observer = new IntersectionObserver(
+            function (entries) {
+              entries.forEach(function (entry) {
+                if (entry.isIntersecting) {
+                  entry.target.classList.add('is-visible');
+                  observer.unobserve(entry.target);
+                }
+              });
+            },
+            { threshold: 0.08, rootMargin: '0px 0px -30px 0px' }
+          );
+          revealBlocks.forEach(function (el) {
+            observer.observe(el);
+          });
+        } else {
+          revealBlocks.forEach(function (el) {
+            el.classList.add('is-visible');
+          });
+        }
+
+        // 4. Filtrage interactif des prestations
+        const filterTabs = document.querySelectorAll('.filter-tab');
+        const serviceCards = document.querySelectorAll('.service-card');
+
+        filterTabs.forEach(function (tab) {
+          tab.addEventListener('click', function () {
+            const filter = tab.getAttribute('data-filter');
+
+            filterTabs.forEach(function (btn) {
+              const isSelected = btn === tab;
+              btn.setAttribute('aria-selected', isSelected ? 'true' : 'false');
+              if (isSelected) {
+                btn.classList.add('bg-steel-light', 'text-mineral-base', 'font-bold');
+                btn.classList.remove('text-slate-300', 'font-medium');
+              } else {
+                btn.classList.remove('bg-steel-light', 'text-mineral-base', 'font-bold');
+                btn.classList.add('text-slate-300', 'font-medium');
+              }
+            });
+
+            serviceCards.forEach(function (card) {
+              const category = card.getAttribute('data-category');
+              if (filter === 'all' || category === filter) {
+                card.classList.remove('hidden');
+              } else {
+                card.classList.add('hidden');
+              }
+            });
+          });
+        });
+
+        // 5. Pré-sélection d'une prestation vers le formulaire devis SMS
+        const serviceSelect = document.getElementById('service-select');
+        const devisSection = document.getElementById('devis');
+        const selectButtons = document.querySelectorAll('.select-service-btn');
+
+        selectButtons.forEach(function (btn) {
+          btn.addEventListener('click', function () {
+            const serviceName = btn.getAttribute('data-select-service');
+            if (serviceSelect && serviceName) {
+              serviceSelect.value = serviceName;
+            }
+            if (devisSection) {
+              devisSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+            const nameInput = document.getElementById('client-name');
+            if (nameInput) {
+              setTimeout(function () {
+                nameInput.focus({ preventScroll: true });
+              }, 350);
+            }
+          });
+        });
+
+        // 6. Formulaire de Devis / Contact Rapide (SMS natif Android & iOS + Copie)
+        const quoteForm = document.getElementById('quote-form');
+        const formError = document.getElementById('form-error');
+        const resultPanel = document.getElementById('sms-result-panel');
+        const previewText = document.getElementById('sms-preview-text');
+        const smsNativeLink = document.getElementById('sms-native-link');
+        const copySmsBtn = document.getElementById('copy-sms-btn');
+        const copyFeedback = document.getElementById('copy-feedback');
+
+        let latestMessage = '';
+
+        if (quoteForm) {
+          quoteForm.addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            const service = document.getElementById('service-select').value.trim();
+            const name = document.getElementById('client-name').value.trim();
+            const phone = document.getElementById('client-phone').value.trim();
+            const details = document.getElementById('client-details').value.trim();
+
+            if (!name || name.length < 2) {
+              formError.textContent = 'Merci d\'indiquer votre nom afin que LBN Toiture puisse vous rappeler.';
+              formError.classList.remove('hidden');
+              document.getElementById('client-name').focus();
+              return;
+            }
+
+            const digitsOnly = phone.replace(/\D/g, '');
+            if (digitsOnly.length < 10) {
+              formError.textContent = 'Merci de renseigner un numéro de téléphone valide (10 chiffres minimum).';
+              formError.classList.remove('hidden');
+              document.getElementById('client-phone').focus();
+              return;
+            }
+
+            formError.classList.add('hidden');
+            copyFeedback.classList.add('hidden');
+
+            latestMessage =
+              'Bonjour LBN Toiture,\n' +
+              'Demande de devis via votre site vitrine :\n' +
+              '- Prestation : ' + service + '\n' +
+              '- Nom : ' + name + '\n' +
+              '- Téléphone : ' + phone + '\n' +
+              '- Détails : ' + (details || 'À préciser lors de notre échange.');
+
+            const smsUri = 'sms:' + BUSINESS_PHONE + '?body=' + encodeURIComponent(latestMessage);
+
+            previewText.textContent = latestMessage;
+            smsNativeLink.setAttribute('href', smsUri);
+            resultPanel.classList.remove('hidden');
+
+            const isMobile = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
+            if (isMobile) {
+              window.location.href = smsUri;
+            }
+          });
+        }
+
+        if (copySmsBtn) {
+          copySmsBtn.addEventListener('click', function () {
+            if (!latestMessage) return;
+            if (navigator.clipboard && navigator.clipboard.writeText) {
+              navigator.clipboard.writeText(latestMessage).then(function () {
+                copyFeedback.classList.remove('hidden');
+              }).catch(function () {
+                fallbackCopy(latestMessage);
+              });
+            } else {
+              fallbackCopy(latestMessage);
+            }
+          });
+        }
+
+        function fallbackCopy(text) {
+          const temp = document.createElement('textarea');
+          temp.value = text;
+          temp.setAttribute('readonly', '');
+          temp.style.position = 'absolute';
+          temp.style.left = '-9999px';
+          document.body.appendChild(temp);
+          temp.select();
+          try {
+            document.execCommand('copy');
+            copyFeedback.classList.remove('hidden');
+          } catch (err) {
+            // Silence si refus navigateur
+          }
+          document.body.removeChild(temp);
+        }
+
+        // 7. Modales (Avant / Après et Mentions légales)
+        function openModal(modalId) {
+          const modal = document.getElementById(modalId);
+          if (!modal) return;
+          modal.classList.remove('hidden');
+          document.body.style.overflow = 'hidden';
+        }
+
+        function closeModal(modalId) {
+          const modal = document.getElementById(modalId);
+          if (!modal) return;
+          modal.classList.add('hidden');
+          document.body.style.overflow = '';
+        }
+
+        const openCompareBtn = document.getElementById('open-compare-btn');
+        const openLegalBtn = document.getElementById('open-legal-btn');
+
+        if (openCompareBtn) {
+          openCompareBtn.addEventListener('click', function () {
+            openModal('compare-modal');
+          });
+        }
+
+        if (openLegalBtn) {
+          openLegalBtn.addEventListener('click', function () {
+            openModal('legal-modal');
+          });
+        }
+
+        document.querySelectorAll('[data-close-modal]').forEach(function (btn) {
+          btn.addEventListener('click', function () {
+            closeModal(btn.getAttribute('data-close-modal'));
+          });
+        });
+
+        ['compare-modal', 'legal-modal'].forEach(function (id) {
+          const modal = document.getElementById(id);
+          if (!modal) return;
+          modal.addEventListener('click', function (e) {
+            if (e.target === modal) {
+              closeModal(id);
+            }
+          });
+        });
+
+        document.addEventListener('keydown', function (e) {
+          if (e.key === 'Escape') {
+            closeModal('compare-modal');
+            closeModal('legal-modal');
+          }
+        });
+      })();
+    </script>
+  </body>
+</html>
